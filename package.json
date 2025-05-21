@@ -1,13 +1,17 @@
 {
-  "name": "towxml",
-  "version": "3.3.1",
+  "name": "sunrise-towxml",
+  "version": "3.3.3",
   "description": "HTML、Markdown转WXML(WeiXin Markup Language)渲染库",
-  "main": "./dist/index.js",
+  "main": "./temp/index.js",
   "scripts": {
     "build": "node build",
     "build:c": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "temp/**",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sbfkcel/towxml.git"
@@ -25,10 +29,11 @@
     "url": "https://github.com/sbfkcel/towxml/issues"
   },
   "homepage": "https://github.com/sbfkcel/towxml#readme",
-  "dependencies": {
+  "devDependencies": {
+    "rollup": "^4.41.0",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
-    "fs-extra": "^8.1.0",
-    "rollup": "^4.41.0"
+    "cross-spawn": "^7.0.6",
+    "fs-extra": "^8.1.0"
   }
 }
